@@ -1,0 +1,12 @@
+{
+  "title": "subnet-architecture",
+  "root": true,
+  "pages": [
+    "---Welcome---",
+    "index",
+    "subnet-recap",
+    "subnets-vs-layer2",
+    "benefits-of-subnets",
+    "create-a-subnet"
+  ]
+}

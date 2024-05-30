@@ -1,0 +1,136 @@
+---
+title: Getting Started
+description: Learn how to use Fumadocs MDX in your documentation
+---
+
+## Introduction
+
+`fumadocs-mdx` is the official content source of Fumadocs. It parses frontmatter and is bundled with many MDX
+plugins for building a good documentation site.
+
+> This package must be used with Fumadocs
+
+## Usage
+
+### Install Dependencies
+
+```package-install
+fumadocs-mdx @types/mdx
+```
+
+### Configuration
+
+Add the plugin to your `next.config.mjs` file.
+
+```js
+import createMDX from 'fumadocs-mdx/config';
+
+const withMDX = createMDX();
+
+/** @type {import('next').NextConfig} */
+const config = {
+  reactStrictMode: true,
+};
+
+export default withMDX(config);
+```
+
+It generates a `.map.ts` file once you start the dev server or start building the app.
+The map file contains all parsed files, you should add it to `.gitignore`.
+
+<Callout title="ESM Only" type='warn' className="mt-4">
+
+The Next.js config must be a `.mjs` file since Fumadocs is ESM-only.
+
+</Callout>
+
+### Define MDX Components
+
+Create `mdx-components.tsx` in your root directory.
+
+```tsx
+import type { MDXComponents } from 'mdx/types';
+// Assume you're using Fumadocs UI
+import defaultComponents from 'fumadocs-ui/mdx';
+
+export function useMDXComponents(components: MDXComponents): MDXComponents {
+  return {
+    ...defaultComponents,
+    ...components,
+  };
+}
+```
+
+### Resolve Files
+
+To integrate with Fumadocs, create:
+
+```ts title="app/source.ts"
+import { map } from '@/.map';
+import { createMDXSource } from 'fumadocs-mdx';
+import { loader } from 'fumadocs-core/source';
+
+export const { getPage, getPages, pageTree } = loader({
+  baseUrl: '/docs',
+  rootDir: 'docs',
+  source: createMDXSource(map),
+});
+```
+
+> For more customisation options, check [Source API](/docs/headless/source-api).
+
+### Start Server
+
+```bash
+next dev
+```
+
+A `.map.ts` file should be created. You can log and see if it is loaded correctly.
+
+See [Pages Conventions](/docs/headless/page-conventions)
+to learn how to organize your pages.
+
+### Built-in Properties
+
+| Property         | Description                                     |
+| ---------------- | ----------------------------------------------- |
+| `frontmatter`    | Frontmatter                                     |
+| `toc`            | Table of Contents                               |
+| `structuredData` | Structured Data, useful for implementing search |
+
+### MDX Plugins
+
+You can customise the options passed to the MDX processor.
+
+```js
+import createMDX from 'fumadocs-mdx/config';
+import rehypeKatex from 'rehype-katex';
+import remarkMath from 'remark-math';
+
+const withMDX = createMDX({
+  mdxOptions: {
+    remarkPlugins: [remarkMath],
+    // When order matters
+    rehypePlugins: (v) => [rehypeKatex, ...v],
+  },
+});
+```
+
+## Deep Dive
+
+Fumadocs MDX is a webpack plugin over Next.js to support reading/importing a MDX file by its name.
+Because Next.js could only optimize static imports, it first generates a map file that imports **all supported files** under the root directory.
+
+The imported files form an array called `map` in your `.map.ts` file, so that your Next.js app can access them.
+
+### Export Properties from `vfile.data`
+
+The built-in configuration applies a remark plugin that turns `vfile.data` properties into exports, you can define additional properties to be exported.
+
+```js
+const withMDX = createMDX({
+  mdxOptions: {
+    valueToExport: ['dataName'],
+  },
+});
+```

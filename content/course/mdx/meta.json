@@ -1,0 +1,14 @@
+{
+  "title": "mdx",
+  "root": true,
+  "pages": [
+    "---Guide---",
+    "index",
+    "...",
+    "---Schema---",
+    "validation",
+    "multiple-types",
+    "---Reference---",
+    "../headless/page-conventions"
+  ]
+}

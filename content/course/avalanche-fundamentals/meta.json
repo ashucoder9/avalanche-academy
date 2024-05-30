@@ -1,0 +1,13 @@
+{
+  "title": "avalanche-fundamentals",
+  "root": true,
+  "pages": [
+    "---Welcome---",
+    "index",
+    "outcome",
+    "---Consensus Mechanisms---",
+    "consensus",
+    "avalanche-consensus",
+    "tps-vs-ttf"
+  ]
+}

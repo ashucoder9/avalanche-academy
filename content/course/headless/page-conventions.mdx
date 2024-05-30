@@ -1,0 +1,178 @@
+---
+title: Page Conventions
+description: Organize documents with file-system based routing
+---
+
+## Overview
+
+This is a shared convention for organizing your pages, followed by all file-system based content sources including Fumadocs MDX.
+
+## File
+
+A [MDX](https://mdxjs.com) or Markdown file.
+
+### Frontmatter
+
+You may extend your content source to add additional properties.
+
+- `title`
+- `description`
+
+```mdx
+---
+title: My Page
+description: Best document ever
+---
+
+## Learn More
+```
+
+## Folder
+
+Organize multiple pages. If not specified, folder name will be used as the display name.
+
+Pages are sorted alphabetically, except for `index.mdx` which is always ordered at the top.
+
+Use [meta file](#meta) to customise a folder.
+
+### Open by Default
+
+Force to open the folder by default.
+
+```json title="meta.json"
+{
+  "title": "Name of Folder",
+  "defaultOpen": true
+}
+```
+
+### Multiple Page Trees
+
+Adding a `root` property in meta can mark your folder as a root folder.
+The nearest root folder of current page will be used as the root of page tree.
+
+```json title="meta.json"
+{
+  "title": "Name of Folder",
+  "root": true
+}
+```
+
+## Meta
+
+Customize the display name, order of pages, or its items on the sidebar by
+creating a `meta.json` in the folder.
+
+When a meta file presents, items are not included unless you have explicitly add them to `pages`.
+
+```json
+{
+  "title": "Name of Folder",
+  "pages": ["guide", "components"]
+}
+```
+
+> `pages` are the filenames of file
+
+### Path
+
+The items of `pages` property can be a relative path to a page or folder. File extensions are not required.
+
+```json
+{
+  "title": "Name of Folder",
+  "pages": ["../headless/page"]
+}
+```
+
+### Separator
+
+You can define a separator in meta by adding a item surrounded with
+`---`.
+
+```json
+{
+  "title": "Name of Folder",
+  "pages": ["---Separator---"]
+}
+```
+
+### Rest
+
+Tired to specify the order of every single page in `meta.json`? You can use
+`...` to automatically add and sort remaining items.
+
+<Callout title="Note" className="mb-4">
+  Index pages won't be included, you must specify the order of `index`.
+</Callout>
+
+```json
+{
+  "title": "Folder",
+  "pages": ["guide", "..."]
+}
+```
+
+### Extract
+
+You can extract the items from a folder with `...folder_name`.
+
+```json
+{
+  "title": "Folder",
+  "pages": ["guide", "...folder"]
+}
+```
+
+### Link
+
+Use the syntax `[Text](url)` to insert links.
+
+```json
+{
+  "title": "Folder",
+  "pages": ["index", "[Vercel](https://vercel.com)"]
+}
+```
+
+## Icons
+
+Add custom icons for a page or a folder with the `icon`
+property.
+
+```mdx
+---
+title: My Page
+icon: MyIcon
+---
+```
+
+```json
+{
+  "title": "My Folder",
+  "icon": "MyIcon"
+}
+```
+
+> See [Source API](/docs/headless/source-api#icons) to learn how to handle icons.
+
+## Internationalization
+
+You can create a localized page for specific language by adding `.{locale}` to your file name. Pages can't be language-specific, you must create a page for default
+locale in order to have its localized version.
+
+This works for meta files too, you can add `.{locale}` to the file name like `meta.cn.json`.
+
+> If it's the default language, just leave it empty like `get-started.mdx`. Do
+> not use add locale code to file name.
+
+### Example
+
+Assume your default language is `en`.
+
+| Name              |                                           |
+| ----------------- | ----------------------------------------- |
+| file.mdx          | Correct                                   |
+| file.cn.mdx       | Correct                                   |
+| file.en.mdx       | Default locale doesn't need a locale code |
+| components.cn.mdx | Pages can't be language-specific          |

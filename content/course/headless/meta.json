@@ -1,0 +1,20 @@
+{
+  "title": "headless",
+  "root": true,
+  "pages": [
+    "---Guide---",
+    "index",
+    "page-conventions",
+    "page-tree",
+    "internationalization",
+    "---API References---",
+    "components",
+    "utils",
+    "mdx",
+    "search",
+    "---Sources---",
+    "source-api",
+    "fumadocs-mdx",
+    "contentlayer"
+  ]
+}

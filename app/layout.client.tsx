@@ -59,7 +59,7 @@ const callsToAction = [
 
   return (
     <Popover className="relative">
-      <PopoverButton className="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+      <PopoverButton className="inline-flex items-center gap-x-1 text-sm font-semibold leading-6">
         <span>Explore Courses</span>
         <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
       </PopoverButton>

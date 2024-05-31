@@ -4,6 +4,7 @@ import type { Viewport } from 'next';
 import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 import { baseUrl, createMetadata } from '@/utils/metadata';
+import { Footer } from '@/components/footer';
 import { Provider } from './provider';
 
 export const metadata = createMetadata({
@@ -40,20 +41,5 @@ export default function RootLayout({
         </Provider>
       </body>
     </html>
-  );
-}
-
-function Footer(): React.ReactElement {
-  return (
-    <footer className="mt-auto border-t bg-card py-12 text-secondary-foreground">
-      <div className="container flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-        <div>
-          <p className="mb-1 text-sm font-semibold">Avalanche Academy</p>
-          <p className="text-xs">
-            Curated with ❤️ by Ava Labs DevRel team.
-          </p>
-        </div>
-      </div>
-    </footer>
   );
 }

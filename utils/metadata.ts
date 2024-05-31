@@ -6,9 +6,9 @@ export function createMetadata(override: Metadata): Metadata {
     openGraph: {
       title: override.title ?? undefined,
       description: override.description ?? undefined,
-      url: 'https://fumadocs.vercel.app',
+      url: 'https://academy.avax.network',
       images: '/banner.png',
-      siteName: 'Fumadocs',
+      siteName: 'Avalanche Academy',
       ...override.openGraph,
     },
     twitter: {

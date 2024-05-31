@@ -2,12 +2,17 @@
   "title": "avalanche-fundamentals",
   "root": true,
   "pages": [
-    "---Welcome---",
+    "---Avalanche Fundamentals---",
     "index",
-    "outcome",
-    "---Consensus Mechanisms---",
-    "consensus",
-    "avalanche-consensus",
-    "tps-vs-ttf"
+    "---Primer on Avalanche Consensus---",
+    "...avalanche-consensus",
+    "---Subnet Architecture---",
+    "...subnet-intro",
+    "---Creating A Subnet---",
+    "...creating-subnet",
+    "---Virtual Machines & Blockchains---",
+    "...vms-and-blockchains",
+    "---Virtual Machine Customization---",
+    "...vm-customization"
   ]
 }

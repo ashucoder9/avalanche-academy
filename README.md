@@ -8,3 +8,11 @@ Top Priority: customize the homepage to present different courses and remove any
 4. Blog can be removed (but we can use it for posting long-form technical tutorials fyi)
 5. Create a proper README which demonstrates how to make contributions to this repo
 6. Rebuild Blog according to our needs
+
+
+## Course Migration Status: (only lists what is done)
+
+Avalanche Fundamentals:
+- Welcome complete (except telegram chat link)
+- Primer (skipped demo, whitepaper, learning checklist)
+- 

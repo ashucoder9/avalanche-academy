@@ -1,5 +1,5 @@
 import type { DocsLayoutProps } from 'fumadocs-ui/layout';
-import { BookIcon, LayoutTemplateIcon } from 'lucide-react';
+import { BookIcon } from 'lucide-react';
 import { utils } from '@/utils/source';
 import { NavChildren, SidebarBanner, Title } from '@/app/layout.client';
 
@@ -21,11 +21,6 @@ export const layoutOptions: Omit<DocsLayoutProps, 'children'> = {
       text: 'Blog',
       url: '/blog',
       active: 'nested-url',
-    },
-    {
-      text: 'Showcase',
-      url: '/showcase',
-      icon: <LayoutTemplateIcon />,
     },
   ],
 };

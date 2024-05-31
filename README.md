@@ -1,5 +1,6 @@
 Issues to fix:
 
+Top Priority: customize the homepage to present different courses and remove anything unnecessary
 
 1. Bring all existing course content into the course folder and make sure nothing looks offbeat
 2. Migrate to FlexSearch, ditch Algolia

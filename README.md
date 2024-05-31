@@ -7,3 +7,4 @@ Top Priority: customize the homepage to present different courses and remove any
 3. Once this is done, get access of original avalanche academy repo and push changes
 4. Blog can be removed (but we can use it for posting long-form technical tutorials fyi)
 5. Create a proper README which demonstrates how to make contributions to this repo
+6. Rebuild Blog according to our needs

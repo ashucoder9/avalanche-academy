@@ -18,7 +18,7 @@ export function Footer() {
                   <a
                     href="https://www.avax.network/get-started"
                     target="_blank"
-                    className="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-gray-500 after:transition-transform after:duration-200 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 p-0.5 rounded-md transition duration-300 outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-neutral-800 dark:focus:ring-neutral-600 focus:ring-neutral-100"
+                    className="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-gray-500 after:transition-transform after:duration-200 after:ease-&lsqb;cubic-bezier(0.65_0.05_0.36_1)&rsqb; hover:after:origin-bottom-left hover:after:scale-x-100 p-0.5 rounded-md transition duration-300 outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-neutral-800 dark:focus:ring-neutral-600 focus:ring-neutral-100"
                   >
                     Get Started
                   </a>
@@ -27,7 +27,7 @@ export function Footer() {
                   <a
                     href="https://subnets.avax.network/"
                     target="_blank"
-                    className="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-gray-500 after:transition-transform after:duration-200 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 p-0.5 rounded-md transition duration-300 outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-neutral-800 dark:focus:ring-neutral-600 focus:ring-neutral-100"
+                    className="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-gray-500 after:transition-transform after:duration-200 after:ease-&lsqb;cubic-bezier(0.65_0.05_0.36_1)&rsqb; hover:after:origin-bottom-left hover:after:scale-x-100 p-0.5 rounded-md transition duration-300 outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-neutral-800 dark:focus:ring-neutral-600 focus:ring-neutral-100"
                   >
                     Explorer
                   </a>
@@ -36,7 +36,7 @@ export function Footer() {
                   <a
                     href="https://stats.avax.network/dashboard/overview/"
                     target="_blank"
-                    className="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-gray-500 after:transition-transform after:duration-200 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 p-0.5 rounded-md transition duration-300 outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-neutral-800 dark:focus:ring-neutral-600 focus:ring-neutral-100"
+                    className="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-gray-500 after:transition-transform after:duration-200 after:ease-&lsqb;cubic-bezier(0.65_0.05_0.36_1)&rsqb; hover:after:origin-bottom-left hover:after:scale-x-100 p-0.5 rounded-md transition duration-300 outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-neutral-800 dark:focus:ring-neutral-600 focus:ring-neutral-100"
                   >
                     Statistics
                   </a>
@@ -45,7 +45,7 @@ export function Footer() {
                   <a
                     href="https://support.avax.network/"
                     target="_blank"
-                    className="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-gray-500 after:transition-transform after:duration-200 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 p-0.5 rounded-md transition duration-300 outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-neutral-800 dark:focus:ring-neutral-600 focus:ring-neutral-100"
+                    className="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-gray-500 after:transition-transform after:duration-200 after:ease-&lsqb;cubic-bezier(0.65_0.05_0.36_1)&rsqb; hover:after:origin-bottom-left hover:after:scale-x-100 p-0.5 rounded-md transition duration-300 outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-neutral-800 dark:focus:ring-neutral-600 focus:ring-neutral-100"
                   >
                     Support
                   </a>
@@ -61,7 +61,7 @@ export function Footer() {
                   <a
                     href="https://github.com/ava-labs"
                     target="_blank"
-                    className="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-gray-500 after:transition-transform after:duration-200 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 p-0.5 rounded-md transition duration-300 outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-neutral-800 dark:focus:ring-neutral-600 focus:ring-neutral-100"
+                    className="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-gray-500 after:transition-transform after:duration-200 after:ease-&lsqb;cubic-bezier(0.65_0.05_0.36_1)&rsqb; hover:after:origin-bottom-left hover:after:scale-x-100 p-0.5 rounded-md transition duration-300 outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-neutral-800 dark:focus:ring-neutral-600 focus:ring-neutral-100"
                   >
                     GitHub
                   </a>
@@ -70,7 +70,7 @@ export function Footer() {
                   <a
                     href="https://medium.com/@avaxdevelopers"
                     target="_blank"
-                    className="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-gray-500 after:transition-transform after:duration-200 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 p-0.5 rounded-md transition duration-300 outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-neutral-800 dark:focus:ring-neutral-600 focus:ring-neutral-100"
+                    className="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-gray-500 after:transition-transform after:duration-200 after:ease-&lsqb;cubic-bezier(0.65_0.05_0.36_1)&rsqb; hover:after:origin-bottom-left hover:after:scale-x-100 p-0.5 rounded-md transition duration-300 outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-neutral-800 dark:focus:ring-neutral-600 focus:ring-neutral-100"
                   >
                     Medium Blog
                   </a>
@@ -79,7 +79,7 @@ export function Footer() {
                   <a
                     href="https://twitter.com/AvaxDevelopers"
                     target="_blank"
-                    className="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-gray-500 after:transition-transform after:duration-200 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 p-0.5 rounded-md transition duration-300 outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-neutral-800 dark:focus:ring-neutral-600 focus:ring-neutral-100"
+                    className="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-gray-500 after:transition-transform after:duration-200 after:ease-&lsqb;cubic-bezier(0.65_0.05_0.36_1)&rsqb; hover:after:origin-bottom-left hover:after:scale-x-100 p-0.5 rounded-md transition duration-300 outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-neutral-800 dark:focus:ring-neutral-600 focus:ring-neutral-100"
                   >
                     Twitter
                   </a>
@@ -95,7 +95,7 @@ export function Footer() {
                   <a
                     href="https://status.avax.network/"
                     target="_blank"
-                    className="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-gray-500 after:transition-transform after:duration-200 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 p-0.5 rounded-md transition duration-300 outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-neutral-800 dark:focus:ring-neutral-600 focus:ring-neutral-100"
+                    className="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-gray-500 after:transition-transform after:duration-200 after:ease-&lsqb;cubic-bezier(0.65_0.05_0.36_1)&rsqb; hover:after:origin-bottom-left hover:after:scale-x-100 p-0.5 rounded-md transition duration-300 outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-neutral-800 dark:focus:ring-neutral-600 focus:ring-neutral-100"
                   >
                     Network Status
                   </a>
@@ -103,7 +103,7 @@ export function Footer() {
                 <li>
                   <a
                     href="https://core.app/"
-                    className="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-gray-500 after:transition-transform after:duration-200 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 p-0.5 rounded-md transition duration-300 outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-neutral-800 dark:focus:ring-neutral-600 focus:ring-neutral-100"
+                    className="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-gray-500 after:transition-transform after:duration-200 after:ease-&lsqb;cubic-bezier(0.65_0.05_0.36_1)&rsqb; hover:after:origin-bottom-left hover:after:scale-x-100 p-0.5 rounded-md transition duration-300 outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-neutral-800 dark:focus:ring-neutral-600 focus:ring-neutral-100"
                   >
                     Core Wallet
                   </a>
@@ -111,7 +111,7 @@ export function Footer() {
                 <li>
                   <a
                     href="https://www.avax.network/legal"
-                    className="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-gray-500 after:transition-transform after:duration-200 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 p-0.5 rounded-md transition duration-300 outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-neutral-800 dark:focus:ring-neutral-600 focus:ring-neutral-100"
+                    className="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-gray-500 after:transition-transform after:duration-200 after:ease-&lsqb;cubic-bezier(0.65_0.05_0.36_1)&rsqb; hover:after:origin-bottom-left hover:after:scale-x-100 p-0.5 rounded-md transition duration-300 outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-neutral-800 dark:focus:ring-neutral-600 focus:ring-neutral-100"
                   >
                     Legal
                   </a>

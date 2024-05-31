@@ -1,4 +1,4 @@
-import { ExternalLinkIcon } from 'lucide-react';
+import { ArrowUpRightIcon } from '@heroicons/react/20/solid';
 import type { Metadata } from 'next';
 import { Card, Cards } from 'fumadocs-ui/components/card';
 import { DocsPage, DocsBody } from 'fumadocs-ui/page';
@@ -36,9 +36,9 @@ export default function Page({
             href={`https://github.com/ava-labs/avalanche-academy/blob/main/${path}`}
             target="_blank"
             rel="noreferrer noopener"
-            className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground"
+            className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground"
           >
-            Edit on Github <ExternalLinkIcon className="size-3" />
+            Edit on Github <ArrowUpRightIcon className="size-5" />
           </a>
         ),
       }}

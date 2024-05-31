@@ -5,7 +5,7 @@ export function Footer() {
         <div>
           <p className="mb-1 text-sm font-semibold">Avalanche Academy</p>
           <p className="text-xs">
-            Curated with ❤️ by Ava Labs DevRel team.
+            Crafted with ❤️ by Ava Labs DevRel team.
           </p>
         </div>
           <div className="grid grid-cols-2 gap-8 mt-12 text-sm font-medium text-gray-500 lg:grid-cols-3 lg:mt-0 xl:col-span-2">

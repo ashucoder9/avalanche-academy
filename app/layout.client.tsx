@@ -1,10 +1,7 @@
 'use client';
-
 import { useParams } from 'next/navigation';
 import type { ReactNode } from 'react';
-import Image from 'next/image';
 import { modes } from '@/utils/modes';
-import Logo from '@/public/logo.png';
 import { Popover, PopoverButton, PopoverPanel, Transition } from '@headlessui/react';
 import { ChevronDownIcon, DocumentTextIcon, UserGroupIcon } from '@heroicons/react/20/solid';
 import {

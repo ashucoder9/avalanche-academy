@@ -19,6 +19,15 @@ export const utils = loader({
         preview: z.string().optional(),
         toc: z.boolean().default(true),
         index: z.boolean().default(false),
+        updated: z.string().or(z.date()).transform((value, context) => {
+            try {
+              return new Date(value);
+            } catch {
+              context.addIssue({ code: z.ZodIssueCode.custom, message: "Invalid date" });
+              return z.NEVER;
+            }
+          }),
+        authors: z.array(z.string()),
       }),
     },
   }),

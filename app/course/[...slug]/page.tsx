@@ -6,12 +6,22 @@ import { notFound } from 'next/navigation';
 import { utils, type Page } from '@/utils/source';
 import { createMetadata } from '@/utils/metadata';
 import Preview from '@/components/preview';
+import Link from "next/link";
 
 interface Param {
   slug: string[];
 }
 
 export const dynamicParams = false;
+
+function formatDate(date: Date) {
+  const formatter = new Intl.DateTimeFormat("en-GB", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+  return formatter.format(date); // 1 January 2021
+}
 
 export default function Page({
   params,
@@ -25,11 +35,46 @@ export default function Page({
   const path = `content/course/${page.file.path}`;
   const preview = page.data.preview;
 
+  // Adding Date Formatting on Right Sidebar
+  const updated = new Date(page.data.updated);
+  const [updatedISO, updatedHuman] = [updated.toISOString(), formatDate(updated)];
+
   return (
     <DocsPage
       toc={page.data.exports.toc}
       lastUpdate={page.data.exports.lastModified}
       tableOfContent={{
+        header: (
+          <div className="flex flex-col gap-6">
+            {/*
+              <div className="bg-secondary/50 rounded-lg border border-border p-4 text-sm">
+                This space will be used for right sidebar action items during lessons.{" "}
+              </div>
+            */}
+            <div className="grid grid-cols-3 text-sm gap-y-4 text-muted-foreground">
+              <div>Author{page.data.authors.length > 1 ? "s" : ""}:</div>
+              <div className="col-span-2 flex flex-col gap-2">
+                {page.data.authors.map(author => (
+                  <Link
+                    key={author}
+                    href={`https://github.com/${author}`}
+                    className="text-foreground transition-colors flex flex-row items-center gap-2 group"
+                  >
+                    <img
+                      src={`https://github.com/${author}.png?size=16`}
+                      className="w-4 h-4 rounded-full border border-background group-hover:border-muted-foreground transition-colors"
+                    />
+                    <span className="flex-grow truncate">{author}</span>
+                  </Link>
+                ))}
+              </div>
+              <div>Updated:</div>
+              <time dateTime={updatedISO} title={updatedISO} className="col-span-2 text-foreground">
+                {updatedHuman}
+              </time>
+            </div>
+          </div>
+        ),
         enabled: page.data.toc,
         footer: (
           <a
